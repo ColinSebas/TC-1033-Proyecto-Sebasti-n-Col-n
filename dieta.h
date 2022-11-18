@@ -1,6 +1,21 @@
 #include<string>
 #include<iostream>
 
+class Nutricion {
+    
+    private:
+
+        std::string consultorio;
+        int arg_menus[100];
+        int arg_pacientes[100];
+
+    public:
+
+        void almacena_menu(); void almacena_pacientes();
+
+};
+
+
 class Menu {
 
     private:
@@ -225,3 +240,61 @@ void Cuentas::set_gastos(double gas){
 void Cuentas::calc_utilidades(){
     utilidades = ingresos - gastos;
 }
+
+class Desayuno {
+
+    private:
+
+        std::string suplemento_des;
+        bool ayuno;
+
+    public:
+
+        Desayuno();
+        Desayuno(std::string sup): suplemento_des(sup){}
+        void set_ayuno(bool); std::string get_suplemento(); bool get_ayuno();
+};
+
+void Desayuno::set_ayuno(bool ay){
+    ayuno = ay;
+}
+bool Desayuno::get_ayuno(){
+    return ayuno;
+}
+std::string Desayuno::get_suplemento(){
+    return suplemento_des;
+}
+
+class Comida {
+
+    private:
+
+        bool cheat_sweet;
+        std::string cheat_name;
+
+    public:
+
+        Comida();
+        Comida(std::string ch): cheat_name(ch){}
+        void set_cheat_sweet(bool); bool get_cheat_sweet(); std::string get_name();
+
+};
+
+void Comida::set_cheat_sweet(bool sw){
+    cheat_sweet = sw;
+}
+bool Comida::get_cheat_sweet(){
+    return cheat_sweet;
+}
+std::string Comida::get_name(){
+    return cheat_name;
+}
+
+class Cena {
+
+    private:    
+
+        std::string vitaminas_cena;
+        int mg_vitaminas;
+
+};
