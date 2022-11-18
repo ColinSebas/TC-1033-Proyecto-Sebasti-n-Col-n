@@ -27,3 +27,11 @@ funcionalidad de cada clase [Menu, Paciente, Cuentas]
 La prueba del programa fue ejecutada desde consola vía MinGW para windows, 
 utilizando g++. Generado utilizano C++ estándar.
 
+### Cambios
+
+Entrega Proyecto 2:
+
+    - Se anexó el diagrama de clases utilizando UML, además de agregar 
+    las clases que formarán parte del programa para incorporar los 
+    conceptos de herencia, composición y agregación en la siguiente 
+    entrega. 
