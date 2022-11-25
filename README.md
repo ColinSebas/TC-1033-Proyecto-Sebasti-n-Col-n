@@ -25,7 +25,8 @@ funcionalidad de cada clase [Menu, Paciente, Cuentas]
 ### Compilación
 
 La prueba del programa fue ejecutada desde consola vía MinGW para windows, 
-utilizando g++. Generado utilizano C++ estándar.
+utilizando g++. Generado utilizano C++ estándar. Por lo que debería de correr
+en todos los sistemas operativos. 
 
 ### Cambios
 
@@ -35,3 +36,10 @@ Entrega Proyecto 2:
     las clases que formarán parte del programa para incorporar los 
     conceptos de herencia, composición y agregación en la siguiente 
     entrega. 
+
+Entrega Proyecto 3:
+
+    - Se arreglaron detalles de sintáxis en el UML. Además se implementó 
+    herencia, composición y agregación en el proyecto para poder almacenar
+    objetos y eficientar procesos. Y se agrego un nuevo archivo .h [des_com_cen.h]
+    para tener un mejor orden. 
