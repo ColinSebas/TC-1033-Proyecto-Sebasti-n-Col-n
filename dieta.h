@@ -91,7 +91,7 @@ class Nutricion {
 
         Nutricion(): imenu(0), ipaciente(0), icuenta(0){};
         void agrega_menu(Menu); void agrega_paciente(Paciente); 
-        void agrega_cuenta(double, double);void set_nom_c(string);
+        void agrega_cuenta(double, double);void set_nom_c(string); void imprime_cuentas();
 
 };
 
@@ -114,6 +114,14 @@ void Nutricion::agrega_paciente(Paciente pac){
 
     arg_paciente[ipaciente] = pac;
     ipaciente += 1;
+
+}
+void Nutricion::imprime_cuentas(){
+
+    for(int i = 0; i < 5; i++){
+       arg_cuenta[i].calc_utilidades();
+       cout << "Cuenta "<< i + 1 << ": " << arg_cuenta[i].get_utilidades() << "\n";
+    }
 
 }
 
