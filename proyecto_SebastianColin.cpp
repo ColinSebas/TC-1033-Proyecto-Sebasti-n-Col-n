@@ -23,6 +23,7 @@ void menu(){
     cout << "3. Muestra menu de comida de paciente demo y calorias \n";
     cout << "4. Agrega menu tipo cena \n";
     cout << "5. Muestra cuentas del consultorio \n"; 
+    cout << "6. Salir \n";
 
 }
 
@@ -47,7 +48,7 @@ int main() {
     des_1.set_ayuno(false);
     Cena alitas;
 
-    while(opcion < 5 && opcion > -1 ){
+    while(opcion < 6 && opcion > -1 ){
 
         // Menu de selección
         menu();
@@ -109,8 +110,13 @@ int main() {
                 dietas.agrega_cuenta(31878.46, 13000.00);
                 dietas.imprime_cuentas();
                 break;
+
+            case 6: 
+                break;
             
         }
     }
     
-}    
+    return 0;
+
+}
