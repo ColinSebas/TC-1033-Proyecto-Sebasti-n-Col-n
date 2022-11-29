@@ -35,11 +35,19 @@ Entrega Proyecto 2:
     - Se anexó el diagrama de clases utilizando UML, además de agregar 
     las clases que formarán parte del programa para incorporar los 
     conceptos de herencia, composición y agregación en la siguiente 
-    entrega. 
+    entrega. Se agregaron espacios entre las frases para facilitar
+    la lectura de los datos que se imprimen en consola. 
 
 Entrega Proyecto 3:
 
     - Se arreglaron detalles de sintáxis en el UML. Además se implementó 
     herencia, composición y agregación en el proyecto para poder almacenar
     objetos y eficientar procesos. Y se agrego un nuevo archivo .h [des_com_cen.h]
-    para tener un mejor orden. 
+    para tener un mejor orden. En el UML los tipos de retorno de las funciones
+    fueron agregados después de los dos puntos y se corrigió multiplicidad de 
+    herencia. 
+
+Entrega Proyecto Final: 
+
+    - Se agrego un menú para que el programa sea más ameno de usar y se comentó 
+    todo el código siguiendo los estándares mostrados en el proyecto demo. 
