@@ -4,6 +4,15 @@
 * A01710148
 */
 
+/**
+ * Descripción:
+ * Programa para clase de Programación
+ * Orientada a Objetos. Crea menus para 
+ * pacientes de un consultorio de nutrición.
+ * También calcula cuentas mensuales y lleva
+ * registro de pacientes. 
+*/
+
 
 // Biblioteccas
 #include<iostream>
@@ -15,8 +24,10 @@
 
 using namespace std;
 
+// Menú para interacción de usuario
 void menu(){
 
+    // Imprime opciones de menú
     cout << "Elige una opcion: \n"; 
     cout << "1. Muestra datos de paciente demo demo: \n"; 
     cout << "2. Muestra menu de desayuno de paciente demo y calorias \n"; 
@@ -27,20 +38,21 @@ void menu(){
 
 }
 
-// Funcion Main
+// Función Main
 int main() {
 
     int opcion = 0;
 
-    // Inicializo objeto Nutricion que almacena otros objetos 
+    // Inicializo objeto Nutrición que almacena otros objetos 
     Nutricion dietas;
 
     Paciente austreberto("Austreberto", 47, 78, 1.78);
 
-    // Primer Menu 
+    // Primer Menú
     Desayuno des_1("Vitamina C", "Pollo", "Calabacin", "Aguacate", "Quinoa",
     200, 50, 85, 300);
 
+    // Segundo Menú
     Comida yakimeshi("Cheesecake", "Atun", "Brocoli", "Almendras", "Arroz",
     180, 75, 80, 200);
 
@@ -50,7 +62,7 @@ int main() {
 
     while(opcion < 6 && opcion > -1 ){
 
-        // Menu de selección
+        // Selección
         menu();
 
         // Introduce opción
@@ -63,7 +75,6 @@ int main() {
                 // Cálculo de datos e impresión
                 austreberto.calcula_imc(); austreberto.rango_peso(); 
                 austreberto.imprime_datos(); 
-                // cout << "\n\n" << "El paciente tiene los siguientes menus." << "\n";
                 break;
 
             case 2:

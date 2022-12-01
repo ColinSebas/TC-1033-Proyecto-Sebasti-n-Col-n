@@ -59,63 +59,184 @@ class Menu {
 
 };
 
+
+/**
+ * getter proteina
+ * 
+ * @param
+ * @return string: tipo proteina 
+*/
 std::string Menu::get_prote(){
     return proteina; 
 }
+/**
+ * getter fruta_verd
+ * 
+ * @param
+ * @return string: tipo fruta/verdura
+*/
 std::string Menu::get_fruit_veg(){
     return fruta_verd;
 }
+/**
+ * getter grasas
+ * 
+ * @param
+ * @return string: tipo de grasa 
+*/
 std::string Menu::get_gras(){
     return grasas;
 }
+/**
+ * getter carbohidrato
+ * 
+ * @param
+ * @return string: tipo de carbohidrato 
+*/
 std::string Menu::get_carbohi(){
     return carbohidrato;
 }
+/**
+ * getter cal_1
+ * 
+ * @param
+ * @return int: calorias de proteina
+*/
 int Menu::get_cal1(){
     return cal_1;
 }
+/**
+ * getter cal_2
+ * 
+ * @param
+ * @return int: calorias de fruta/verdura
+*/
 int Menu::get_cal2(){
     return cal_2;
 }
+/**
+ * getter cal_3
+ * 
+ * @param
+ * @return int: calorias de grasas
+*/
 int Menu::get_cal3(){
     return cal_3;
 }
+/**
+ * getter cal_4
+ * 
+ * @param
+ * @return int: calorias de carbohidratos
+*/
 int Menu::get_cal4(){
     return cal_4;
 }
+/**
+ * getter cal_tot
+ * 
+ * @param
+ * @return int: calorias totales
+*/
 int Menu::get_caltot(){
     return cal_tot;
 }
+/**
+ * getter cal_mcarbs
+ * 
+ * @param
+ * @return int: macros de carbohidratos
+*/
 int Menu::get_mcarbs(){
     return carbs;
 }
+/**
+ * getter m_prot
+ * 
+ * @param
+ * @return int: macros de proteina
+*/
 int Menu::get_mprot(){
     return prot;
 }
+/**
+ * getter m_gras
+ * 
+ * @param
+ * @return int: macros de grasas
+*/
 int Menu::get_mgras(){
     return gras;
 }
+/**
+ * setter proteina
+ * 
+ * @param std::string pr: proteina
+ * @return 
+*/
 void Menu::set_prote(std::string pr){
     proteina = pr;
 }
+/**
+ * setter fruta_verd
+ * 
+ * @param std::string fr: fruta_verd
+ * @return 
+*/
 void Menu::set_fruit_veg(std::string fr){
     fruta_verd = fr;
 }
+/**
+ * setter grasas
+ * 
+ * @param std::string gr: grasas
+ * @return 
+*/
 void Menu::set_grasa(std::string gr){
     grasas = gr;
 }
+/**
+ * setter carbohidrato
+ * 
+ * @param std::string cr: carbohidrato
+ * @return 
+*/
 void Menu::set_carbohi(std::string cr){
     carbohidrato = cr;
 }
+/**
+ * setter cal_1
+ * 
+ * @param int c1: cal_1
+ * @return 
+*/
 void Menu::set_cal1(int c1){
     cal_1 = c1;
 }
+/**
+ * setter cal_2
+ * 
+ * @param int c2: cal_2
+ * @return 
+*/
 void Menu::set_cal2(int c2){
     cal_2 = c2;
 }
+/**
+ * setter cal_3
+ * 
+ * @param int c3: cal_3
+ * @return 
+*/
 void Menu::set_cal3(int c3){
     cal_3 = c3;
 }
+/**
+ * setter cal_4
+ * 
+ * @param int c4: cal_4
+ * @return 
+*/
 void Menu::set_cal4(int c4){
     cal_4 = c4;
 }
@@ -159,13 +280,13 @@ int Menu::macros_tot(){
 */
 void Menu::captura_datos(){
 
-    cout << "Captura proteina y calorias:" << "\n";
+    cout << "Captura proteina (solo una palabra), enter y despues ingresa calorias:" << "\n";
     cin >> proteina; cin >> cal_1; cout  << "\n";
-    cout << "Captura fruta o verdura y calorias:" << "\n";
+    cout << "Captura fruta o verdura (solo una palabra), enter y despues ingresa calorias:" << "\n";
     cin >> fruta_verd; cin >> cal_2; cout << "\n";
-    cout << "Captura grasa y calorias:" << "\n";
+    cout << "Captura grasa (solo una palabra), enter y despues ingresa calorias:" << "\n";
     cin >> grasas; cin >> cal_3; cout  << "\n";
-    cout << "Captura carbohidrato y calorias:" << "\n";
+    cout << "Captura carbohidrato (solo una palabra), enter y despues ingresa calorias:" << "\n";
     cin >> carbohidrato; cin >> cal_4; cout << "\n";
 
 
@@ -209,15 +330,39 @@ class Desayuno: public Menu {
         void set_sumplemento(std::string);
 };
 
+/**
+ * setter ayuno
+ * 
+ * @param bool ay: ayuno
+ * @return 
+*/
 void Desayuno::set_ayuno(bool ay){
     ayuno = ay;
 }
+/**
+ * getter ayuno
+ * 
+ * @param
+ * @return bool: ayuno
+*/
 bool Desayuno::get_ayuno(){
     return ayuno;
 }
+/**
+ * getter suplemento_des
+ * 
+ * @param
+ * @return std::string: suplemento_des
+*/
 std::string Desayuno::get_suplemento(){
     return suplemento_des;
 }
+/**
+ * setter suplemento_des
+ * 
+ * @param std::string su: suplemento_des
+ * @return 
+*/
 void Desayuno::set_sumplemento(std::string su){
     suplemento_des = su;
 }
@@ -243,16 +388,39 @@ class Comida: public Menu {
         void set_name(std::string);
 
 };
-
+/**
+ * setter cheat_sweet
+ * 
+ * @param bool sw: cheat_sweet
+ * @return 
+*/
 void Comida::set_cheat_sweet(bool sw){
     cheat_sweet = sw;
 }
+/**
+ * getter cheat_sweet
+ * 
+ * @param
+ * @return std::string: cheat_sweet
+*/
 bool Comida::get_cheat_sweet(){
     return cheat_sweet;
 }
+/**
+ * getter cheat_name
+ * 
+ * @param
+ * @return std::string: cheat_name
+*/
 std::string Comida::get_name(){
     return cheat_name;
 }
+/**
+ * setter cheat_name
+ * 
+ * @param std::string na: cheat_name
+ * @return 
+*/
 void Comida::set_name(std::string na){
     cheat_name = na;
 }
@@ -278,16 +446,39 @@ class Cena: public Menu {
         int get_mg();
 
 };
-
+/**
+ * setter vitaminas_cena
+ * 
+ * @param std::string vit: vitaminas_cena
+ * @return 
+*/
 void Cena::set_vitacena(std::string vit){
     vitaminas_cena = vit;
 }
+/**
+ * setter mg_vitaminas
+ * 
+ * @param int m: mg_vitaminas
+ * @return 
+*/
 void Cena::set_mg(int m){
     mg_vitaminas = m;
 }
+/**
+ * getter vitaminas_cena
+ * 
+ * @param 
+ * @return std::string: vitaminas_cena
+*/
 std::string Cena::get_vitacena(){
     return vitaminas_cena;
 }
+/**
+ * getter mg_vitaminas
+ * 
+ * @param 
+ * @return int: mg_vitaminas
+*/
 int Cena::get_mg(){
     return mg_vitaminas;
 }
@@ -331,34 +522,93 @@ class Paciente {
         void agrega_comida(Comida); void agrega_cena(Cena); void imprime_datos(); 
 
 };
-
+/**
+ * getter name
+ * 
+ * @param 
+ * @return std::string: name
+*/
 std::string Paciente::get_name(){
     return name; 
 }
+/**
+ * getter edad
+ * 
+ * @param 
+ * @return int: edad
+*/
 int Paciente::get_edad(){
     return edad; 
 }
+/**
+ * getter peso
+ * 
+ * @param 
+ * @return int: peso
+*/
 int Paciente::get_peso(){
     return peso;
 }
+/**
+ * getter imc
+ * 
+ * @param 
+ * @return float:imc
+*/
 float Paciente::get_imc(){
     return imc;
 }
+/**
+ * getter altura
+ * 
+ * @param 
+ * @return float: altura
+*/
 float Paciente::get_altura(){
     return altura;
 }
+/**
+ * getter rango
+ * 
+ * @param 
+ * @return std::string: rango
+*/
 std::string Paciente::get_rango(){
     return rango;
 }
+/**
+ * setter name
+ * 
+ * @param std::string n: name
+ * @return 
+*/
 void Paciente::set_name(std::string n){
     name = n;
 }
+/**
+ * setter edad
+ * 
+ * @param int e: edad
+ * @return 
+*/
 void Paciente::set_edad(int e){
     edad = e;
 }
+/**
+ * setter peso
+ * 
+ * @param int p: peso
+ * @return 
+*/
 void Paciente::set_peso(int p){
     peso = p;
 }
+/**
+ * setter altura
+ * 
+ * @param float a: altura
+ * @return 
+*/
 void Paciente::set_altura(float a){
     altura = a;
 }
@@ -396,12 +646,12 @@ void Paciente::rango_peso(){
     }
 
 }
-
-/*
-* Funciones para agregar desayuno, comida o cena
-* a arreglos dentro de paciente
+/**
+ * Metodo para agregar desayunos a objeto paciente
+ * 
+ * @param Desayuno d
+ * @return 
 */
-
 void Paciente::agrega_desayuno(Desayuno d){
 
     if (ides == 0){
@@ -413,6 +663,12 @@ void Paciente::agrega_desayuno(Desayuno d){
     }
 
 }
+/**
+ * Metodo para agregar comidas a objeto paciente
+ * 
+ * @param Comida c
+ * @return 
+*/
 void Paciente::agrega_comida(Comida c){
 
     if (icoms == 0){
@@ -424,6 +680,12 @@ void Paciente::agrega_comida(Comida c){
     }
 
 }
+/**
+ * Metodo para agregar cenas a objeto paciente
+ * 
+ * @param Cena ce
+ * @return 
+*/
 void Paciente::agrega_cena(Cena ce){
 
     if (icens == 0){
@@ -438,6 +700,9 @@ void Paciente::agrega_cena(Cena ce){
 
 /**
  * Imprime datos de paciente
+ * 
+ * @param 
+ * @return 
 */
 void Paciente::imprime_datos(){
 
